@@ -2,7 +2,7 @@
 _code challenge_
 
 There are 3 sections to the readme, one for each part of the challenge. 
-My response to `challenge 1` may be found [here on my portfolio site][wonderschool] and [on github (src)][github]. 
+My response to `challenge 1` may be found [here on my portfolio site][live-demo] and [on github (src)][github]. 
 While the database schema requested in `challenge 2` can be found [in the github repo as well][schema].
 Finally `challenge 3` has it's reply [within this very readme down by the API section][API].
 I enjoyed this test. I hope you enjoy scanning it :)
@@ -142,7 +142,7 @@ _a quick write up_
 
 [schema]: https://github.com/Wambosa/wonderschool/blob/master/schema.sql
 [github]: github.com/Wambosa/wonderschool
-[wonderschool]: shondiaz.com/wonderschool
+[live-demo]: http://shondiaz.com/wonderschool/
 [api]: https://github.com/Wambosa/wonderschool/blob/master/README.md#API
 [pretty-check]: https://lokesh-coder.github.io/pretty-checkbox/
 [gif]: https://user-images.githubusercontent.com/6006222/50050847-2c6a4080-00cc-11e9-9b86-3f6e2c8f2ee7.gif
