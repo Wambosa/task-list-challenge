@@ -1,7 +1,6 @@
 # task list challenge
 _code challenge_
 
-There are 3 sections to the readme, one for each part of the challenge. 
 My response to `challenge 1` may be found [here on my portfolio site][live-demo] and [on github (src)][github]. 
 While the database schema requested in `challenge 2` can be found [in the github repo as well][schema].
 Finally `challenge 3` has it's reply [within this very readme down by the API section][API].
