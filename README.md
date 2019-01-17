@@ -1,4 +1,4 @@
-# wonderschool
+# task list challenge
 _code challenge_
 
 There are 3 sections to the readme, one for each part of the challenge. 
@@ -18,56 +18,10 @@ _some notes about front end decisions_
 ![preview][gif]
 
 
-##### conflicted decisions
-
-###### not use the svg checkbox
-[CSS was used to style the checkbox][pretty-check] instead of my own custom code.
-It was quite fast and produced the "same" user experience with less code and one less asset to manage.
-I feel like diverging too much from what was asked might be a downfall, yet, I can't help but make it "better".
-
-
-###### umd dependencies _(universal module definitions)_
-It isn't _"the right way"_ I'd say to make mosts apps.
-My thinking is two fold; _"Lets knock this out today so we can get to the phone call soon."_
-and _"Hey, I wonder if this will work?"_. As mentioned before, 
-I may be taking too much risk building it this way instead of the traditional 
-`create-react-app` with it's superior support. Hopefully you think its cool instead of scary
-that javascript can be so flexible, diverse, and powerful. _(deploy size is 35kb)_
-
-###### changed some payload keys
-it was driving me nuts that they didn't match the database. I let go of `group` vs `tag`.
-
-------------------------------------------------------------------------
-
-
-### Schema
-_some notes about the [schema.sql file found in this repo][schema]_
-
-##### sqlite
-sqlite because this is a rapid one day prototype :)
-I want to execute the code to make sure it is sane.
-
-##### datatypes
-`varchar` over `nvarchar` because faster to type and smaller footprint.
-The advantage of unicode nvarchar is not required since this is not multilingual yet
-
-`timestamp` instead of `datetime` because sqlite makes the `DEFAULT CURRENT_TIMESTAMP`
-there is a larger footprint. space savings techniques by using epoch is possible, however less readable.
-
-##### normalization
-_I didn't mean to go all 5th form_
-
-Since this data is so small, it was easy and cheap to do.
-This is usually not the goal though since space is so cheap, typically performance is a bigger concern.
-Especially if the data is published to us, I would not try to normalize 3rd party stuff.
-
-
 ------------------------------------------------------------------------
 
 
 ### API
-_Lets pretend the vanity domain is wonderschool.com.
-assumption: we know who the current user is because of an apikey header._
 
 ##### [PUT] /task/{id}
 _This endpoint can be used to uncheck/check, or even update other dependencies._
@@ -133,9 +87,6 @@ _a quick write up_
     help: "https://wonderschool.com/status/healthcheck"
   }
 ```
-
-
-
 
 
 ----------

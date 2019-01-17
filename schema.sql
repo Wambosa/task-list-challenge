@@ -100,21 +100,3 @@ where user_id = 2
 order by t.id asc, n.need_id asc;
 
 COMMIT;
-
-
-
--- Although this could just be a simple flat table to get going, 
--- I figured a little flexibility would give us multiple tags
--- (because my task groupings in real life often overlap categories).
--- Here is a flat table that I don't wanna build, 
--- it can be more performant though if you had like 300 columns
--- CREATE TABLE IF NOT EXISTS task_flat (
---   id      INTEGER PRIMARY KEY AUTOINCREMENT,
---   user_id INTEGER NOT NULL,
---   name    VARCHAR(255) NOT NULL,
---   tag     VARCHAR(255) NULL,
---   needs   TEXT NULL, -- has to be parsed because its just a serialized int array
---   created DATETIME NULL,
---   done    DATETIME NULL,
---   FOREIGN KEY(user_id) REFERENCES user(id)
--- );
